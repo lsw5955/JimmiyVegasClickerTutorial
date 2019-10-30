@@ -9,5 +9,7 @@ public class PurchaseLog : MonoBehaviour
     public void StartAutoCookies()
     {
         autoCreatingCookies.SetActive(true);
+        GlobalCash.moneyCount -= GlobalBaker.bakerValue;
+        GlobalBaker.bakerValue *= 2;
     }
 }
