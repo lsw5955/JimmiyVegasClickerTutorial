@@ -17,6 +17,7 @@ public class AutoCookies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cookieIncreasing = GlobalBaker.numberOfBaker;
         internalIncreasing = cookieIncreasing;
         if (creatingCookies == false)
         {

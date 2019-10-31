@@ -8,6 +8,7 @@ public class SellCookies : MonoBehaviour
     public Text statusText;
     private AnimatorStateInfo animInfo;
     private Animator anim;
+    public AudioSource[] clickSE;
 
     private void Start()
     {
@@ -27,7 +28,8 @@ public class SellCookies : MonoBehaviour
 
     public void ClickTheButton()
     {
-        if(GlobalCookies.cookieCount <= 0)
+        clickSE[(int)Random.Range(0,2)].Play();
+        if (GlobalCookies.cookieCount <= 0)
         {
             statusText.text = "没钱你想啥呢啊?";
             anim.Play("StatusAnim");
