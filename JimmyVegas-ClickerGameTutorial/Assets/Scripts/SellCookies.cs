@@ -19,7 +19,7 @@ public class SellCookies : MonoBehaviour
     private void Update()
     {
         animInfo = anim.GetCurrentAnimatorStateInfo(0);
-        if (animInfo.IsName("StatusAnim") && animInfo.normalizedTime >= 1.0f)
+        if (!animInfo.IsName("Idle") && animInfo.normalizedTime >= 1.0f)
         {
             anim.Play("Idle");
             statusText.text = "";

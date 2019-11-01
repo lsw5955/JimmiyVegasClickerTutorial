@@ -5,10 +5,11 @@ using UnityEngine;
 public class MainButtonClick : MonoBehaviour
 {
     public AudioSource clickSE;
+    public int creaseVolume = 1;
 
     public void ClickTheButton()
     {
         clickSE.Play();
-        GlobalCookies.cookieCount++ ;
+        GlobalCookies.cookieCount += creaseVolume;
     }
 }

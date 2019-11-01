@@ -2179,6 +2179,7 @@ GameObject:
   - component: {fileID: 2146579601}
   - component: {fileID: 2146579603}
   - component: {fileID: 2146579604}
+  - component: {fileID: 2146579602}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2199,6 +2200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSE: {fileID: 550492480}
+  creaseVolume: 1
 --- !u!4 &2146579600
 Transform:
   m_ObjectHideFlags: 0
@@ -2227,6 +2229,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookieDisplay: {fileID: 1738765107}
   internalCookie: 0
+--- !u!114 &2146579602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146579598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8088dae95fdf78b4481974972eb6c47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusBox: {fileID: 906506829}
+  cookieCheck: 0
+  genChance: 0
+  disasterActive: 0
+  cookieLoss: 0
 --- !u!114 &2146579603
 MonoBehaviour:
   m_ObjectHideFlags: 0
