@@ -34,7 +34,7 @@ public class GlobalBaker : MonoBehaviour
             fakeBaker.gameObject.SetActive(false);
         }
 
-        if(turnOffButton == true)
+        else//if(turnOffButton == true)
         {
             baker.gameObject.SetActive(false);
             fakeBaker.gameObject.SetActive(true);

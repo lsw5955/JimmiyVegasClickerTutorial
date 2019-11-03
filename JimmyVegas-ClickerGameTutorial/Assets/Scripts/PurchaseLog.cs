@@ -5,6 +5,7 @@ using UnityEngine;
 public class PurchaseLog : MonoBehaviour
 {
     public GameObject autoCreatingCookies;
+    public GameObject autoSellCookies;
     public AudioSource clickSE;
 
     public void StartAutoCookies()
@@ -17,4 +18,16 @@ public class PurchaseLog : MonoBehaviour
         GlobalBaker.turnOffButton = true;
         GlobalBaker.bakePerSec += 1;
     }
+
+    public void StartAutoSell()
+    {
+        clickSE.Play();
+        autoSellCookies.SetActive(true);
+        GlobalCash.moneyCount -= GlobalShop.shopValue;
+        GlobalShop.shopValue *=2;
+        GlobalShop.numberOfshop += 1;
+        GlobalShop.turnOffButton = true;
+        GlobalShop.shopPerSec += 2;
+    }
+
 }
